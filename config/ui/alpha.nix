@@ -40,6 +40,7 @@
               };
               opts = {
                 shortcut = "f";
+                keymap = [ "n" "f" "<cmd>Telescope find_files<CR>" { noremap = true; silent = true; nowait = true; } ];
                 position = "center";
                 cursor = 3;
                 width = 38;
@@ -55,6 +56,7 @@
               };
               opts = {
                 shortcut = "n";
+                keymap = [ "n" "n" "<cmd>ene<CR>" { noremap = true; silent = true; nowait = true; } ];
                 position = "center";
                 cursor = 3;
                 width = 38;
@@ -70,6 +72,7 @@
               };
               opts = {
                 shortcut = "r";
+                keymap = [ "n" "r" "<cmd>Telescope oldfiles<CR>" { noremap = true; silent = true; nowait = true; } ];
                 position = "center";
                 cursor = 3;
                 width = 38;
@@ -85,6 +88,7 @@
               };
               opts = {
                 shortcut = "t";
+                keymap = [ "n" "t" "<cmd>Telescope live_grep<CR>" { noremap = true; silent = true; nowait = true; } ];
                 position = "center";
                 cursor = 3;
                 width = 38;
@@ -100,6 +104,7 @@
               };
               opts = {
                 shortcut = "q";
+                keymap = [ "n" "q" "<cmd>qa<CR>" { noremap = true; silent = true; nowait = true; } ];
                 position = "center";
                 cursor = 3;
                 width = 38;
