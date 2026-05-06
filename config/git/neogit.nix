@@ -214,7 +214,7 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>ng";
+      key = "<leader>gg";
       action = ":Neogit<CR>";
       options = {
         desc = "Open Neogit";
