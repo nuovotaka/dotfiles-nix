@@ -24,7 +24,11 @@
       enable = true;
       inlayHints = true;
       servers = {
-        rust_analyzer.enable = true;
+        rust_analyzer = {
+          enable = true;
+          installCargo = false;
+          installRustc = false;
+        };
         omnisharp.enable = true;
         superhtml.enable = true;
         sqls.enable = true;
@@ -65,13 +69,13 @@
     -- Roslyn-ls のバイナリへのパスを Lua 側で認識させるための設定
     -- (必要に応じて追加)
 
-    vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
-      vim.lsp.handlers.hover, { border = _border }
-    )
+    vim.lsp.handlers["textDocument/hover"] = function(...)
+      return vim.lsp.handlers.hover(..., { border = _border })
+    end
 
-    vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(
-      vim.lsp.handlers.signature_help, { border = _border }
-    )
+    vim.lsp.handlers["textDocument/signatureHelp"] = function(...)
+      return vim.lsp.handlers.signature_help(..., { border = _border })
+    end
 
     vim.diagnostic.config{
       float = { border = _border }

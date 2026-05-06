@@ -100,14 +100,6 @@
       action = "<cmd>OpenScratchpad<CR>"; # クラスパット（下書き）を開く
     }
 
-    # --- lazygit.nix (Git TUI) ---
-    {
-      key = "<leader>gg";
-      mode = [ "n" ];
-      action = "<cmd>LazyGit<CR>"; # LazyGitの画面を起動
-      options = { silent = true; noremap = true; };
-    }
-
     # --- nix-develop.nix (Nix環境連携) ---
     {
       key = "<leader>nd";
