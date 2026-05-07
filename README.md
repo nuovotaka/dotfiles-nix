@@ -57,6 +57,8 @@ task switch
 | `<leader>fs` |   n    | `Telescope lsp_document_symbols`  | ファイル内シンボル検索       |
 | `<leader>fS` |   n    | `Telescope lsp_workspace_symbols` | ワークスペース内シンボル検索 |
 | `<leader>fd` |   n    | `Telescope diagnostics`           | 診断情報検索                 |
+| `<leader>ft` |   n    | `TodoTelescope`                   | Todo 検索                    |
+| `<leader>fp` |   n    | `Telescope projects`              | プロジェクト検索             |
 
 ## 📁 ファイル管理・ナビゲーション
 
@@ -96,13 +98,14 @@ task switch
 | `<leader>bl`   |   n    | `BufferLineCloseLeft`   | 左側のバッファをすべて閉じる |
 | `<leader>bP`   |   n    | `BufferLineGroupClose`  | ピン留め以外をすべて閉じる   |
 
-## 🔍 検索・置換 (Spectre)
+## 🔍 検索・置換 (Spectre, Grug-far)
 
 | キー         | モード | アクション            | 内容                          |
 | :----------- | :----: | :-------------------- | :---------------------------- |
 | `<leader>S`  |   n    | `Spectre toggle`      | プロジェクト全体検索・置換    |
 | `<leader>sw` |  n,v   | `Spectre search word` | カーソル下/選択中の単語を検索 |
 | `<leader>sp` |   n    | `Spectre search file` | 現在のファイル内で検索        |
+| `<leader>ro` |   n    | `GrugFar`             | 高速な全体検索・置換          |
 
 ## 🛠 LSP・コード解析・診断 (Trouble)
 
@@ -120,6 +123,7 @@ task switch
 | `<leader>cl` |   n    | `Trouble lsp`                | LSP 定義・参照表示                 |
 | `<leader>xL` |   n    | `Trouble loclist`            | ロケーションリスト表示             |
 | `<leader>xQ` |   n    | `Trouble qflist`             | クイックフィックスリスト表示       |
+| `<leader>xt` |   n    | `TodoTrouble`                | Todo リストを Trouble で表示       |
 
 ## 🌿 Git 操作 (Gitsigns, Diffview, Neogit)
 
@@ -188,6 +192,24 @@ task switch
 | `<leader>ni`  |   n    | `PackageInfo install`         | 新しい依存関係インストール |
 | `<leader>np`  |   n    | `PackageInfo change_version`  | 依存関係バージョン変更     |
 
+## 🤖 AI 支援 (Codeium)
+
+| キー         | モード | アクション           | 内容                               |
+| :----------- | :----: | :------------------- | :--------------------------------- |
+| `<Tab>`      |   i    | `Codeium Accept`     | 提案されたコードを確定             |
+| `<C-]>`      |   i    | `Codeium Next`       | 次の提案へ                         |
+| `<C-[>`      |   i    | `Codeium Prev`       | 前の提案へ                         |
+| `<C-x>`      |   i    | `Codeium Clear`      | 提案を消去                         |
+
+## 📂 セッション・プロジェクト管理 (Persistence, Project.nvim)
+
+| キー         | モード | アクション                        | 内容                                   |
+| :----------- | :----: | :-------------------------------- | :------------------------------------- |
+| `<leader>qs` |   n    | `persistence load`                | 現在のディレクトリのセッションを復元   |
+| `<leader>ql` |   n    | `persistence load { last = true }`| 最後のセッションを復元                 |
+| `<leader>qd` |   n    | `persistence stop`                | 現在のセッションを保存しない           |
+| `<leader>fp` |   n    | `Telescope projects`              | プロジェクト検索                       |
+
 ## 🏗 編集補助・その他
 
 | キー         | モード | アクション                        | 内容                                 |
@@ -230,7 +252,9 @@ task switch
 - **Flash** - 高速ナビゲーション
 - **Mini.nvim** - 軽量プラグイン集（surround, comment, pairs, ai）
 - **Spectre** - プロジェクト全体の検索・置換
+- **Grug-far** - 高速なプロジェクト全体検索・置換
 - **Trouble** - 診断・参照の統合表示
+- **Todo-comments** - TODOコメントのハイライトと検索
 - **Yanky** - ヤンク履歴管理
 
 ### Git 統合
@@ -243,10 +267,13 @@ task switch
 
 - **LSP** - 言語サーバープロトコル
 - **Blink.cmp** - 補完エンジン
+- **Codeium** - AI コード補完
 - **Conform** - フォーマッター
 - **Neotest** - テストランナー統合
 - **DAP** - デバッガー
 - **Rest.nvim** - HTTP クライアント
+- **Persistence** - セッション管理
+- **Project-nvim** - プロジェクト管理
 
 ### 言語固有
 
