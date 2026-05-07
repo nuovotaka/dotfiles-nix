@@ -14,6 +14,7 @@
     ./navigation/harpoon.nix
     ./navigation/oil.nix
     ./navigation/yazi.nix
+    ./navigation/session-project.nix
     
     # UI & appearance
     ./ui/alpha.nix
@@ -27,6 +28,7 @@
     ./ui/neoscroll.nix
     ./ui/zen-mode.nix
     ./ui/smear-cursor.nix
+    ./ui/todo-comments.nix
     
     # Editing & navigation
     ./editing/flash.nix
@@ -64,6 +66,7 @@
     ./development/kulala.nix
     ./development/opencode.nix
     ./development/windsurf-vim.nix
+    ./development/grug-far.nix
     
     # Terminal & utilities
     ./terminal/toggleterm.nix
