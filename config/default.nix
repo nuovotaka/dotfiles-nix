@@ -67,6 +67,7 @@
     ./development/opencode.nix
     ./development/windsurf-vim.nix
     ./development/grug-far.nix
+    ./development/codeium.nix
     
     # Terminal & utilities
     ./terminal/toggleterm.nix
