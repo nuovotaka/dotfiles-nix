@@ -39,6 +39,7 @@ export PATH
 alias ll='eza -l --icons --git'
 alias la='eza -la --icons --git'
 alias cat='bat'
+alias clr='clear'
 
 eval "$(starship init zsh)"
 
