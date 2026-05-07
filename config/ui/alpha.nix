@@ -98,6 +98,22 @@
             }
             {
               type = "button";
+              val = "  Restore Session";
+              on_press = {
+                __raw = "function() require('persistence').load() end";
+              };
+              opts = {
+                shortcut = "s";
+                keymap = [ "n" "s" "<cmd>lua require('persistence').load()<CR>" { noremap = true; silent = true; nowait = true; } ];
+                position = "center";
+                cursor = 3;
+                width = 38;
+                align_shortcut = "right";
+                hl_shortcut = "Keyword";
+              };
+            }
+            {
+              type = "button";
               val = "  Quit Neovim";
               on_press = {
                 __raw = "function() vim.cmd[[qa]] end";
