@@ -20,7 +20,8 @@
     lazygit
     gnupg
     # neovim
-    nodejs-slim
+    nodejs
+    pnpm
     wget
     starship
     tree
