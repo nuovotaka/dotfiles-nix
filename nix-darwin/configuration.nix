@@ -38,6 +38,7 @@
     };
 
     dock = {
+      autohide = true;        # Dock の自動非表示
       tilesize = 26;
       orientation = "left";
       show-recents = false;
